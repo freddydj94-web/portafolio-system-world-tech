@@ -1,0 +1,299 @@
+/* Variables de color y estilos generales */
+:root {
+    --fondo: #121826;
+    --fondo-seccion: #1c2536;
+    --color-principal: #22c1a4;
+    --color-secundario: #3a9bd8;
+    --texto: #f1f1f1;
+    --texto-suave: #b8c1cc;
+    --fuente: Arial, Helvetica, sans-serif;
+    --redondeado: 8px;
+}
+
+/* Quitar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ======= Encabezado ======= */
+.header {
+    background-color: var(--fondo-seccion);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-principal);
+}
+
+.logo {
+    color: var(--color-principal);
+    font-size: 28px;
+}
+
+.subtitulo {
+    color: var(--texto-suave);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.menu-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.menu-lista a {
+    color: var(--texto);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: var(--redondeado);
+}
+
+.menu-lista a:hover {
+    background-color: var(--color-principal);
+    color: var(--fondo);
+}
+
+/* ======= Sección inicio ======= */
+.inicio {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.inicio-texto {
+    flex: 1 1 350px;
+}
+
+.inicio-texto h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.rol {
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.inicio-texto p {
+    color: var(--texto-suave);
+    margin-bottom: 15px;
+}
+
+.foto {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid var(--color-principal);
+    object-fit: cover;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--fondo);
+    padding: 10px 20px;
+    border-radius: var(--redondeado);
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+/* ======= Secciones en general ======= */
+.seccion {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo {
+    color: var(--color-principal);
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-secundario);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.seccion p {
+    color: var(--texto-suave);
+    margin-bottom: 12px;
+}
+
+.seccion strong {
+    color: var(--color-principal);
+}
+
+/* ======= Habilidades ======= */
+.habilidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.habilidad {
+    background-color: var(--fondo-seccion);
+    padding: 20px;
+    border-radius: var(--redondeado);
+    flex: 1 1 220px;
+    border-left: 4px solid var(--color-principal);
+}
+
+.habilidad h3 {
+    color: var(--color-principal);
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.habilidad p {
+    font-size: 14px;
+}
+
+.habilidad:hover {
+    background-color: #232f45;
+}
+
+/* ======= Proyectos ======= */
+.proyectos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    background-color: var(--fondo-seccion);
+    padding: 20px;
+    border-radius: var(--redondeado);
+    flex: 1 1 280px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--redondeado);
+    margin-bottom: 12px;
+}
+
+.proyecto h3 {
+    color: var(--color-secundario);
+    margin-bottom: 8px;
+}
+
+.proyecto p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.enlace-proyecto {
+    display: inline-block;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    padding: 6px 14px;
+    border-radius: var(--redondeado);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.enlace-proyecto:hover {
+    background-color: var(--color-principal);
+    color: var(--fondo);
+}
+
+/* ======= Formulario ======= */
+.formulario {
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--redondeado);
+    border: 1px solid #3a465a;
+    background-color: var(--fondo-seccion);
+    color: var(--texto);
+    font-family: var(--fuente);
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+}
+
+.formulario .boton {
+    margin-top: 15px;
+}
+
+/* ======= Pie de página ======= */
+.footer {
+    background-color: var(--fondo-seccion);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid var(--color-principal);
+}
+
+.footer p {
+    color: var(--texto-suave);
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.footer a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ======= Ajustes para celular ======= */
+@media (max-width: 600px) {
+    .inicio {
+        text-align: center;
+    }
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+    .inicio-texto h2 {
+        font-size: 24px;
+    }
+}

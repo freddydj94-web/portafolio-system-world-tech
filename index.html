@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edison Oñate - System World Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado con el nombre y el menú -->
+    <header class="header">
+        <h1 class="logo">System World Tech</h1>
+        <p class="subtitulo">Portafolio de Edison Fabricio Oñate Cañar</p>
+
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Sección de inicio -->
+        <section id="inicio" class="inicio">
+            <div class="inicio-texto">
+                <h2>Hola, soy Edison Oñate</h2>
+                <p class="rol">Especialista en Infraestructura, Redes y Ciberseguridad</p>
+                <p>
+                    Bienvenidos a mi portafolio. Aquí encontrarás información sobre mí, y
+                    las habilidades que he desarrollado durante más de 9 años trabajando
+                    en el área de tecnología y los proyectos en los que he participado
+                    junto a mi emprendimiento System World Tech.
+                </p>
+                <a href="#proyectos" class="boton">Ver mis proyectos</a>
+            </div>
+            <img src="img/edison.png" alt="Foto de Edison Oñate" class="foto">
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="seccion">
+            <h2 class="titulo">Sobre mí</h2>
+            <p>
+                Mi nombre es Edison Fabricio Oñate Cañar. Soy Técg. Superior en Redes y
+                Seguridad Informática y actualmente estoy cursando la carrera de 
+                Ingeniería en Sistemas Inteligentes en la Universidad Ecotec.
+            </p>
+            <p>
+                Trabajo desde hace varios años en el área de infraestructura tecnológica,
+                redes de telecomunicaciones y sistemas de seguridad. Me gusta mucho el
+                tema de la ciberseguridad y las normativas como ISO 27001, y por eso decidí
+                crear mi propio emprendimiento llamado <strong>System World Tech</strong>,
+                con el que ofrezco servicios de instalación de redes, videovigilancia,
+                control de acceso y asesoría en seguridad de la información.
+            </p>
+            <p>
+                Mi objetivo es seguir creciendo profesionalmente, terminar mi carrera y
+                consolidar mi emprendimiento como una empresa confiable en el Ecuador.
+            </p>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="seccion">
+            <h2 class="titulo">Habilidades</h2>
+            <div class="habilidades">
+                <article class="habilidad">
+                    <h3>Redes y Telecomunicaciones</h3>
+                    <p>Configuración de redes GPON y FTTH, fibra óptica, cableado estructurado, MikroTik y Cisco.</p>
+                </article>
+                <article class="habilidad">
+                    <h3>Ciberseguridad</h3>
+                    <p>Implementación de ISO 27001, análisis de amenazas y políticas de seguridad de la información.</p>
+                </article>
+                <article class="habilidad">
+                    <h3>Seguridad Electrónica</h3>
+                    <p>Instalación de cámaras Avigilon y Pelco, control de acceso Lenel OnGuard y CCTV.</p>
+                </article>
+                <article class="habilidad">
+                    <h3>Soporte Técnico</h3>
+                    <p>Mantenimiento de servidores Windows y Linux, respaldo de información y soporte a usuarios.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="seccion">
+            <h2 class="titulo">Proyectos</h2>
+            <div class="proyectos">
+
+                <article class="proyecto">
+                    <img src="img/metro.png" alt="Proyecto Metro de Quito">
+                    <h3>Metro de Quito</h3>
+                    <p>
+                        Lider tecnico en la face de contruccion del metro de Quito, implementando la red de 
+                        fibra óptica y cable radiante en las
+                        estaciones y túneles del Metro. También di mantenimiento a los
+                        servidores de videovigilancia.
+                    </p>
+                    <a href="#" class="enlace-proyecto">Ver más</a>
+                </article>
+
+                <article class="proyecto">
+                    <img src="img/lunding.png" alt="Proyecto LundinGold y Petroecuador">
+                    <h3>LundinGold y Petroecuador</h3>
+                    <p>
+                        Instalación de sistemas de seguridad electrónica, cámaras, control
+                        de acceso, fibra óptica certificada y cableado estructurado
+                        categoría 6A.
+                    </p>
+                    <a href="#" class="enlace-proyecto">Ver más</a>
+                </article>
+
+                <article class="proyecto">
+                    <img src="img/claro.png" alt="Proyecto Claro Ecuador">
+                    <h3>Claro Ecuador</h3>
+                    <p>
+                        Migración de antenas de microonda e implementación de red GPON
+                        en varias ciudades de la sierra y la costa del país.
+                    </p>
+                    <a href="#" class="enlace-proyecto">Ver más</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="seccion">
+            <h2 class="titulo">Contacto</h2>
+            <p>Si quieres comunicarte conmigo, puedes dejarme un mensaje en el siguiente formulario.</p>
+
+            <form class="formulario" action="mailto:systemworl94@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="systemworl94@gmail.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>© 2025 Edison Fabricio Oñate Cañar - System World Tech</p>
+        <p>
+            <a href="https://github.com/freddydj94-web" target="_blank">Mi GitHub</a>
+            &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/edison-oñate-0bb52a238" class="footer-enlace" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
