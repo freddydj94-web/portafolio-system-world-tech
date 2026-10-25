@@ -19,7 +19,11 @@
 
 body {
     font-family: var(--fuente);
-    background-color: var(--fondo);
+    background-image:linear-gradient(rgba(18, 24, 38, 0.85), rgba(18, 24, 38, 0.85)), url('img/logo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--texto);
     line-height: 1.6;
 }
